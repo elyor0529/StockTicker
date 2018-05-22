@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5EDE4AA5-4B4F-4D8B-822D-1980129B17A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{8E01E624-BB47-432B-A66C-5F23FD7D7E01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTicker.Lib", "StockTicker.Lib\StockTicker.Lib.csproj", "{6C7CE525-3CAB-410B-AC92-5554C5A9B72E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTicker.Soap", "StockTicker.SOAP\StockTicker.Soap.csproj", "{767FBA0E-1BB2-406D-9F23-97F653146295}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTicker.Web", "StockTicker.Web\StockTicker.Web.csproj", "{E8D05143-B178-429E-A56C-422C6BCC7A92}"
+	ProjectSection(ProjectDependencies) = postProject
+		{767FBA0E-1BB2-406D-9F23-97F653146295} = {767FBA0E-1BB2-406D-9F23-97F653146295}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTicker.Cmd", "StockTicker.Cmd\StockTicker.Cmd.csproj", "{91CD22BD-A9CF-4724-9CFE-3CC2D406D2F6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{767FBA0E-1BB2-406D-9F23-97F653146295} = {767FBA0E-1BB2-406D-9F23-97F653146295}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C7CE525-3CAB-410B-AC92-5554C5A9B72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C7CE525-3CAB-410B-AC92-5554C5A9B72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C7CE525-3CAB-410B-AC92-5554C5A9B72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C7CE525-3CAB-410B-AC92-5554C5A9B72E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{767FBA0E-1BB2-406D-9F23-97F653146295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767FBA0E-1BB2-406D-9F23-97F653146295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767FBA0E-1BB2-406D-9F23-97F653146295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767FBA0E-1BB2-406D-9F23-97F653146295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D05143-B178-429E-A56C-422C6BCC7A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D05143-B178-429E-A56C-422C6BCC7A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D05143-B178-429E-A56C-422C6BCC7A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D05143-B178-429E-A56C-422C6BCC7A92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91CD22BD-A9CF-4724-9CFE-3CC2D406D2F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91CD22BD-A9CF-4724-9CFE-3CC2D406D2F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91CD22BD-A9CF-4724-9CFE-3CC2D406D2F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91CD22BD-A9CF-4724-9CFE-3CC2D406D2F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C7CE525-3CAB-410B-AC92-5554C5A9B72E} = {5EDE4AA5-4B4F-4D8B-822D-1980129B17A4}
+		{767FBA0E-1BB2-406D-9F23-97F653146295} = {5EDE4AA5-4B4F-4D8B-822D-1980129B17A4}
+		{E8D05143-B178-429E-A56C-422C6BCC7A92} = {8E01E624-BB47-432B-A66C-5F23FD7D7E01}
+		{91CD22BD-A9CF-4724-9CFE-3CC2D406D2F6} = {8E01E624-BB47-432B-A66C-5F23FD7D7E01}
+	EndGlobalSection
+EndGlobal

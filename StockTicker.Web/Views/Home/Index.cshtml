@@ -1,0 +1,23 @@
+﻿@model StockModel[]
+@{
+    ViewBag.Title = "Stock codes";
+}
+
+@if (ViewBag.Error != null)
+{
+    <p class="alert alert-danger">
+        @ViewBag.Error
+    </p>
+}
+
+@if (Model.Length > 0)
+{
+    <ul style="list-style-type: decimal">
+        @foreach (var item in Model)
+        {
+            <li>
+                @item.Symbol-@item.Name (@item.Price.ToString("C"))
+            </li>
+        }
+    </ul>
+}
